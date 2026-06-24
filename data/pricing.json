@@ -1,0 +1,24 @@
+{
+  "endpoints": {
+    "imagen-4-pro-remix-image/remix_image": {
+      "unit_price_cents": 18,
+      "billing_config": {
+        "key": "output_resolution",
+        "overrides": {
+          "1k": 18,
+          "2k": 18,
+          "4k": 24
+        }
+      }
+    },
+    "imagen-4/text_to_image": {
+      "unit_price_cents": 8
+    },
+    "imagen-4-fast/text_to_image": {
+      "unit_price_cents": 4
+    },
+    "imagen-4-ultra/text_to_image": {
+      "unit_price_cents": 12
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "imagen-4": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@runapi.ai/imagen-4-mcp"
+      ],
+      "env": {
+        "RUNAPI_API_KEY": "${RUNAPI_API_KEY}"
+      }
+    }
+  }
+}
