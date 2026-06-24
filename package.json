@@ -1,7 +1,7 @@
 {
   "name": "@runapi.ai/imagen-4-mcp",
-  "version": "0.1.1",
-  "description": "Imagen 4 MCP server for RunAPI — create Imagen 4 AI tasks (remix image, text to image), poll status, and check pricing across 4 models with one API key.",
+  "version": "0.1.2",
+  "description": "RunAPI Imagen 4 MCP server for image generation: create tasks, poll results, and check pricing across 4 model variants from Claude Code, Codex, Cursor, and VS Code.",
   "type": "module",
   "main": "dist/src/index.js",
   "bin": {
@@ -25,12 +25,16 @@
   },
   "keywords": [
     "runapi",
+    "runapi-ai",
     "mcp",
+    "mcp-server",
     "model-context-protocol",
-    "ai",
+    "ai-agents",
+    "claude-code",
+    "cursor",
+    "vscode",
     "imagen-4",
     "imagen-4-mcp",
-    "imagen-4-ai",
     "imagen-4-api",
     "image-generation",
     "ai-image",
@@ -39,7 +43,7 @@
   ],
   "author": "RunAPI",
   "license": "Apache-2.0",
-  "homepage": "https://runapi.ai",
+  "homepage": "https://runapi.ai/models/imagen-4",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/runapi-ai/imagen-4-mcp.git"
