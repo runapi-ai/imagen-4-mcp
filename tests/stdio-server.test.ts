@@ -45,7 +45,7 @@ describe("imagen-4 stdio MCP server", () => {
 
     const tools = await client.listTools();
     const names = tools.tools.map((tool) => tool.name).sort();
-    expect(names).toEqual(["check_pricing","get_task","remix_image","text_to_image"]);
+    expect(names).toEqual(["check_pricing","get_task","login","remix_image","text_to_image"]);
 
     const pricing = await client.callTool({ name: "check_pricing", arguments: {} });
     const content = pricing.content?.[0];
