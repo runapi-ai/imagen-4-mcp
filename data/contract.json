@@ -14,7 +14,21 @@
       ],
       "fields_by_model": {
         "imagen-4-pro-remix-image": {
+          "model": {
+            "type": "string"
+          },
+          "prompt": {
+            "type": "string"
+          },
+          "source_image_urls": {
+            "type": "array",
+            "required": true
+          },
+          "callback_url": {
+            "type": "string"
+          },
           "aspect_ratio": {
+            "type": "string",
             "enum": [
               "1:1",
               "2:3",
@@ -29,21 +43,20 @@
               "auto"
             ]
           },
-          "output_format": {
-            "enum": [
-              "png",
-              "jpg"
-            ]
-          },
           "output_resolution": {
+            "type": "string",
             "enum": [
               "1k",
               "2k",
               "4k"
             ]
           },
-          "source_image_urls": {
-            "required": true
+          "output_format": {
+            "type": "string",
+            "enum": [
+              "png",
+              "jpg"
+            ]
           }
         }
       }
@@ -58,18 +71,20 @@
       ],
       "fields_by_model": {
         "imagen-4": {
+          "model": {
+            "type": "string"
+          },
+          "prompt": {
+            "type": "string"
+          },
+          "callback_url": {
+            "type": "string"
+          },
+          "negative_prompt": {
+            "type": "string"
+          },
           "aspect_ratio": {
-            "enum": [
-              "1:1",
-              "16:9",
-              "9:16",
-              "3:4",
-              "4:3"
-            ]
-          }
-        },
-        "imagen-4-fast": {
-          "aspect_ratio": {
+            "type": "string",
             "enum": [
               "1:1",
               "16:9",
@@ -78,17 +93,53 @@
               "4:3"
             ]
           },
-          "output_count": {
+          "seed": {
+            "type": "integer"
+          }
+        },
+        "imagen-4-fast": {
+          "model": {
+            "type": "string"
+          },
+          "prompt": {
+            "type": "string"
+          },
+          "callback_url": {
+            "type": "string"
+          },
+          "negative_prompt": {
+            "type": "string"
+          },
+          "aspect_ratio": {
+            "type": "string",
             "enum": [
-              1,
-              2,
-              3,
-              4
+              "1:1",
+              "16:9",
+              "9:16",
+              "3:4",
+              "4:3",
+              "auto"
             ]
+          },
+          "seed": {
+            "type": "integer"
           }
         },
         "imagen-4-ultra": {
+          "model": {
+            "type": "string"
+          },
+          "prompt": {
+            "type": "string"
+          },
+          "callback_url": {
+            "type": "string"
+          },
+          "negative_prompt": {
+            "type": "string"
+          },
           "aspect_ratio": {
+            "type": "string",
             "enum": [
               "1:1",
               "16:9",
@@ -96,6 +147,9 @@
               "3:4",
               "4:3"
             ]
+          },
+          "seed": {
+            "type": "integer"
           }
         }
       }
