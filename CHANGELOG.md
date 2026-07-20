@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.1.8](https://github.com/runapi-ai/imagen-4-mcp/releases/tag/v0.1.8) - 2026-07-20
+
+### Fixed
+- Require remix requests to contain between one and eight source images.
+
+
 ## [v0.1.7](https://github.com/runapi-ai/imagen-4-mcp/releases/tag/v0.1.7) - 2026-07-08
 
 ### Changed

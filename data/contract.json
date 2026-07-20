@@ -9,6 +9,7 @@
     "imagen-4/remix-image": {
       "model": "Imagen 4",
       "endpoint": "remix_image",
+      "task_type": "asynchronous",
       "models": [
         "imagen-4-pro-remix-image"
       ],
@@ -22,7 +23,9 @@
           },
           "source_image_urls": {
             "type": "array",
-            "required": true
+            "required": true,
+            "max_items": 8,
+            "min_items": 1
           },
           "callback_url": {
             "type": "string"
@@ -64,6 +67,7 @@
     "imagen-4/text-to-image": {
       "model": "Imagen 4",
       "endpoint": "text_to_image",
+      "task_type": "asynchronous",
       "models": [
         "imagen-4",
         "imagen-4-fast",
